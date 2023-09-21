@@ -1,0 +1,97 @@
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+}   
+
+.status {
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Permanent Marker', cursive;
+    font-weight: bold;
+    background-color: white;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.player {
+    width: 25vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+    border: 3px solid black;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.token, .wins {
+    font-size: 60px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+#player1 {
+    background-color: aqua;
+}
+
+#player2 {
+    background-color: coral;
+}
+
+.board {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+} 
+
+.row {
+    display: flex;
+}
+
+.square {
+    font-size: 60px;
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+    width: 10vw;
+    height: 10vw;
+    border: 6px solid black;
+    outline: none;
+    cursor: pointer; 
+    background-color: white; 
+} 
+
+#sq0, #sq1, #sq2 {
+    border-top: none;
+}
+
+#sq0, #sq3, #sq6 {
+    border-left: none;
+}
+
+#sq6, #sq7, #sq8 {
+    border-bottom: none;
+}
+
+#sq2, #sq5, #sq8 {
+    border-right: none;
+}
+
+.square:hover {
+    background-color: #eee; 
+}
+
+.square:active {
+    transform: scale(0.95); 
+}
