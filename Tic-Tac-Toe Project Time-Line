@@ -1,0 +1,11 @@
+[] Tuesday 19th Sep. - Create pseudo layout (pencil and paper) and rough concept of functionality.
+
+[] Wednesday 20th Sep. - Create basic HTML/CSS structure and layout of game.  
+
+[] Thursday 21st Sep. - Add query selectors and creation of basic game function. (createPlayer, eventListener to add player moves to the game board and to the data model board array).
+
+[] Friday 22nd Sep. - Continue to add functionality (check for wins, change players, update game, reset board).
+
+[] Saturday 23rd Sep. - Test all functionality, clean up code and look for areas to refactor!
+
+[] Sunday 24th Sep. - Complete README and final checks.
