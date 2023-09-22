@@ -76,11 +76,9 @@ function changePlayer(){
     }
 }
 
-function draw(){
-    if(!board.includes('')){   // check to see if the board has empty spots
-        update.innerText = "It's a Draw!"
+function checkDraw(){
+    return !board.includes('')
     }
-}
 
 function resetBoard() {
     board = ['', '', '', '', '', '', '', '', ''];
@@ -105,16 +103,13 @@ function startGame() {
                 board[index] = currentPlayer.token; //updating the board internal (console.log(board[index]))
                 e.target.innerText = currentPlayer.token; // updating the DOM
                 if (checkWin()) {
-                    increaseWins()
+                    increaseWins();
                     delayReset();
-                } else {
-                    changePlayer()
-    
-                    if (!board.includes('')) {
-                        update.innerText = "It's a Draw!";
-                        delayReset();
-                     }
-                     
+                } else if (checkDraw()){
+                    update.innerText = "It's a Draw!"
+                    delayReset();
+                     } else {
+                      changePlayer();
     
                 }
             }
