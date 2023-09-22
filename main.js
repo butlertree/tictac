@@ -34,29 +34,19 @@ document.addEventListener('DOMContentLoaded', function() {
     for (var i = 0; i < squares.length; i++) {
         squares[i].addEventListener('click', function(e) {
             var index = e.target.getAttribute('data-index');
-    
-    
+            
             if (board[index] === '') {
                 board[index] = currentPlayer.token; //updating the board internal (console.log(board[index]))
                 e.target.innerText = currentPlayer.token; // updating the DOM
                 if (checkWin()) {
-                    if (currentPlayer.token === 'x') {
-                        player1.wins++;
-                        player1Wins.innerText = player1.wins
-                        update.innerText = "Player 1 Wins!!";
-                    } else {
-                        player2.wins++
-                        player2Wins.innerText = player2.wins
-                        update.innerText = "Player 2 Wins!!";
-                    }
-                    resetBoard();
+                    increaseWins()
+                    delayReset();
                 } else {
-                    currentPlayer = currentPlayer === player1 ? player2 : player1;
-                    update.innerText = currentPlayer.player + "'s Turn"
+                    changePlayer()
     
                     if (!board.includes('')) {
                         update.innerText = "It's a Draw!";
-                        resetBoard();
+                        delayReset();
                      }
                      
     
@@ -64,6 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+}) 
     
     function checkWin() {  //checking for winning conditions
         var winConditions = [
@@ -96,6 +87,38 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
-    });
+
     
 
+//new  
+function countWins(player, playerWinsElement){ //refers to player and HTML element
+    player.wins++; // counts the wins
+    playerWinsElement.innerText = player.wins;  // updats the HTML
+}
+
+function changePlayer(){
+   if (currentPlayer === player1){      //switching the value of the variable currentPlayer
+    currentPlayer = player2;
+    update.innerText = player2.player + "'s Turn";    
+    } else {
+        currentPlayer = player1;
+        update.innerText = player1.player + "'s Turn";
+    }
+}
+
+
+function increaseWins() {
+    if (currentPlayer.token === 'x') {     // includes my function to count for player object and HTML
+        countWins(player1, player1Wins);
+        update.innerText = "Player 1 Wins!!";
+    } else {
+        countWins(player2, player2Wins);
+        update.innerText = "Player 2 Wins!!";
+    }
+}
+
+function draw(){
+    if(!board.includes('')){   // check to see if the board has empty spots
+        update.innerText = "It's a Draw!"
+    }
+}
