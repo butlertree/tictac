@@ -122,3 +122,10 @@ function draw(){
         update.innerText = "It's a Draw!"
     }
 }
+
+function delayReset(){
+    setTimeout(function(){
+        resetBoard();
+        changePlayer();
+    },1500);
+}
