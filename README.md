@@ -14,7 +14,12 @@ Fork this repo and copy the SSH.  Clone the repo down to your local machine.  gi
 
 ---
 ### Preview of App:
-(![Drawn image of browser](<assets/Tic-Tac-Toe browser display.png>))
+![Drawn image of browser](<assets/Tic-Tac-Toe browser display.png>)
+![Drawn image of game flow](<assets/Tic-Tac-Toe game flow.png>)
+![Drawn image of pseudocode](<assets/Tic-Tac-Toe pseudocode .png>)
+![Screen shot of game](<assets/Screenshot 2023-09-22 at 4.00.16 PM.png>)
+![Screen shot of game play](<assets/Screenshot 2023-09-22 at 4.00.42 PM.png>)
+
 ---
 ### Context:
 We worked on this project as our Mod 1 Group Assignment and had one week to work on it. As of the submission of the project we will have completed Week 4 of Mod 1 of the Front End Engineering program at Turing School of Software and Design.
