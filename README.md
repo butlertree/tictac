@@ -14,7 +14,7 @@ Fork this repo and copy the SSH.  Clone the repo down to your local machine.  gi
 
 ---
 ### Preview of App:
-![assets/Tic-Tac-Toe browser display.jpg](assets/Tic-Tac-Toe browser display.jpg)
+![Drawn image of browser display](assets/Tic-Tac-Toe browser display.jpg)
 ---
 ### Context:
 We worked on this project as our Mod 1 Group Assignment and had one week to work on it. As of the submission of the project we will have completed Week 4 of Mod 1 of the Front End Engineering program at Turing School of Software and Design.
