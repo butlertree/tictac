@@ -27,10 +27,10 @@ function createPlayer(player, token){
     return newPlayer
 }
 
-document.addEventListener('DOMContentLoaded', function() {
+
    
 
-
+function startGame() {
     for (var i = 0; i < squares.length; i++) {
         squares[i].addEventListener('click', function(e) {
             var index = e.target.getAttribute('data-index');
@@ -54,8 +54,11 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+}
+document.addEventListener('DOMContentLoaded', function() {
+    startGame();
 }) 
-    
+
     function checkWin() {  //checking for winning conditions
         var winConditions = [
             [0, 1, 2],
