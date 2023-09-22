@@ -22,7 +22,7 @@ Fork this repo and copy the SSH.  Clone the repo down to your local machine.  gi
 
 ---
 ### Context:
-We worked on this project as our Mod 1 Group Assignment and had one week to work on it. As of the submission of the project we will have completed Week 4 of Mod 1 of the Front End Engineering program at Turing School of Software and Design.
+I worked on this project as my Mod 1 Final Assignment and had one week to work on it. As of the submission of the project I will have completed Week 5 of Mod 1 of the Front End Engineering program at Turing School of Software and Design.
 
 
 ---
@@ -31,21 +31,20 @@ We worked on this project as our Mod 1 Group Assignment and had one week to work
 
 - [Chris Butler](https://github.com/butlertree)
 #### Project Manager:
-
+- Nik Seif 
 ---
 ### Learning Goals:
-- Gain an understanding of how to write clean HTML and CSS to match a provided comp
-- Understand how a developer might separate the data model from the DOM model
-- Incorporate & iterate over arrays in order to filter what is being displayed
-- Craft code with clean style, using small functions that show trends toward DRYness, SRP, and purity
+- Solidify and demonstrate your understanding of:
+  - DRY JavaScript
+  - event delegation to handle similar event listeners
+- Understand the difference between the data model and how the data is displayed on the DOM
+- Iterate through/filter DOM elements using for loops
+- Use your problem solving process to break down large problems, solve things step by step, and trust yourself to not rely on an outside “answer” to a logical c challenge
 ---
 ### Wins + Challenges:
 
 - Wins
-  - We were able to complete all required iterations (0-4) with no known bugs remaining.  
-  - We also added a couple of small enhancements.
-  - We were able to set up a GitHub Project and organize the work using tickets so that we all knew what each of us was working on at any given time.  This also allowed us to more easily to keep track of completed and remaining work.   
-  - We maintained strong communication throughout the project.  
+  - I was able to complete all required elements of the project with no known bugs remaining.  
+  - I was able to refactor the code so that the functionality is simple with functions primarily handling one task at a time.   
 - Challenges
-  - Initially we experienced challenges around merge conflicts.
-    - After unsuccessfully troubleshooting as a team we reached out to our instructors for guidance. Travis was able to point us in the correct direction. We then worked through subsequent merge conflicts together  
+  - The main challenge of this assignment was figuring out how to check for the variety of winning possibilities.  My refactored solution is similiar to a mathmatical proof checking on the value of three different element positions of an array within and array of possibilities.  
