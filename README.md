@@ -39,7 +39,7 @@ I worked on this project as my Mod 1 Final Assignment and had one week to work o
   - event delegation to handle similar event listeners
 - Understand the difference between the data model and how the data is displayed on the DOM
 - Iterate through/filter DOM elements using for loops
-- Use your problem solving process to break down large problems, solve things step by step, and trust yourself to not rely on an outside “answer” to a logical c challenge
+- Use your problem solving process to break down large problems, solve things step by step, and trust yourself to not rely on an outside “answer” to a logical challenge
 ---
 ### Wins + Challenges:
 
