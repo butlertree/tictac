@@ -1,21 +1,14 @@
 // Query selectors
 
-var player1Wins = document.querySelector('#player1Wins');  //display wins
-var player2Wins = document.querySelector('#player2Wins'); //display wins
-var squares = document.querySelectorAll('.square'); //node list collection of the squares
-var update = document.querySelector('#statusText') //whos turn and win/loose/draw
+var player1Wins = document.querySelector('#player1Wins');  
+var player2Wins = document.querySelector('#player2Wins'); 
+var squares = document.querySelectorAll('.square'); 
+var update = document.querySelector('#statusText') 
 
 var board = ['', '', '', '', '', '', '', '', ''];
-var player1 = createPlayer("Player 1", "x"); // will be assigned to current player
-var player2 = createPlayer("Player 2", "o"); // will be assigned to current player
+var player1 = createPlayer("Player 1", "x"); 
+var player2 = createPlayer("Player 2", "o"); 
 var currentPlayer = player1;
-
-
-console.log(player1.player);  // Outputs: "Player 1"
-console.log(player1.token);   // Outputs: "x"
-console.log(player1.wins);    // outpusts: 0
-console.log(board) // the array storing the clicks
-
 
 //Functions
 function createPlayer(player, token){
@@ -27,7 +20,7 @@ function createPlayer(player, token){
     return newPlayer
 }
 
-function checkWin() {  //checking for winning conditions
+function checkWin() {  
     var winConditions = [
         [0, 1, 2],
         [3, 4, 5],
@@ -51,13 +44,13 @@ function checkWin() {  //checking for winning conditions
     return false;
 }
 
-function countWins(player, playerWinsElement){ //refers to player and HTML element
-    player.wins++; // counts the wins
-    playerWinsElement.innerText = player.wins;  // updats the HTML
+function countWins(player, playerWinsElement){ 
+    player.wins++; 
+    playerWinsElement.innerText = player.wins;  
 }
 
 function increaseWins() {
-    if (currentPlayer.token === 'x') {     // includes my function to count for player object and HTML
+    if (currentPlayer.token === 'x') {     
         countWins(player1, player1Wins);
         update.innerText = "Player 1 Wins!!";
     } else {
@@ -67,7 +60,7 @@ function increaseWins() {
 }
 
 function changePlayer(){
-   if (currentPlayer === player1){      //switching the value of the variable currentPlayer
+   if (currentPlayer === player1){      
     currentPlayer = player2;
     update.innerText = player2.player + "'s Turn";    
     } else {
@@ -100,8 +93,8 @@ function startGame() {
             var index = e.target.getAttribute('data-index');
             
             if (board[index] === '') {
-                board[index] = currentPlayer.token; //updating the board internal (console.log(board[index]))
-                e.target.innerText = currentPlayer.token; // updating the DOM
+                board[index] = currentPlayer.token; 
+                e.target.innerText = currentPlayer.token; 
                 if (checkWin()) {
                     increaseWins();
                     delayReset();
