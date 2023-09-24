@@ -84,7 +84,7 @@ function delayReset(){
     setTimeout(function(){
         resetBoard();
         changePlayer();
-    },1500);
+    },800);
 }
 
 function startGame() {
