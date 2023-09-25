@@ -47,4 +47,4 @@ I worked on this project as my Mod 1 Final Assignment and had one week to work o
   - I was able to complete all required elements of the project with no known bugs remaining.  
   - I was able to refactor the code so that the functionality is simple with functions primarily handling one task at a time.   
 - Challenges
-  - The main challenge of this assignment was figuring out how to check for the variety of winning possibilities.  My refactored solution is similiar to a mathmatical proof checking on the value of three different element positions of an array within and array of possibilities.  
+  - The main challenge of this assignment was figuring out how to check for the variety of winning possibilities.  My refactored solution is similiar to a mathmatical proof checking on the value of three different element positions of an array within an array of possibilities.  
