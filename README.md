@@ -5,6 +5,8 @@
 ### Abstract:
 This project is an interactive 2 player tic-tac-toe game.  The interface allows the user to place tokens in empty spaces on the game board. The data model keeps track of the token placement and wins of each player.  The DOM displays wins for each player, current players turn and the outcome of the game Win/Loose/Draw.  The game board is reset at the conclusion of the game.  
 
+The site is live at https://butlertree.github.io/tictac/
+
 ---
 ### Installation Instructions:
 The user can visit this web site: 
